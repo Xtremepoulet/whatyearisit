@@ -8,7 +8,7 @@ router.get('/year', function(req, res, next) {
   const date = new Date();
   console.log('ok')
 
-  res.json({ year : date})
+  res.json({ year : date.getFullYear().toString()})
 
 });
 
